@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 
 // Components
 import Hero from "../assets/Hero";
+import NewsMenu from "../components/NewsMenu";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       </Helmet>
       <div className="home">
         <Hero />
+        <NewsMenu/>
       </div>
     </>
   );

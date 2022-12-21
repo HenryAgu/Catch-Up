@@ -1,0 +1,28 @@
+.class_menu {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.link {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: center;
+  text-decoration: none;
+  color: #717172;
+}
+
+.link:focus{
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: #000000; 
+}
+
+
