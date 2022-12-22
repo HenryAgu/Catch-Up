@@ -1,6 +1,24 @@
-.all_cat {
+.our_sources {
+  background: #0045ad;
+  padding: 50px;
+}
+
+.our_sources_header {
+  margin-bottom: 50px;
+}
+
+.our_sources_header h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.source_cat {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -10,70 +28,70 @@
   width: 100%;
 }
 
-.card_info {
+.card_info_source {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.author p {
+.author_source p {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #594810;
-  background: #ffffcb;
+  color: #006600;
+  background: #BCD7FF;
   border-radius: 30px;
   padding: 10px 15px 10px 15px;
 }
 
-.time p {
+.time_source p {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  color: #898989;
+  color: #ffffff;
 }
 
 /* card text */
 
-.card_text a{
-    text-decoration: none;
+.card_text_source a {
+  text-decoration: none;
 }
 
-.card_text a:hover{
-    text-decoration: underline;
-    color: #000000;
+.card_text_source a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
-.card_text p {
+.card_text_source p {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Load More */
 
-.load_more{
-    margin: 100px auto;
+.load_more_source {
+  margin: 100px auto;
 }
 
-.load_more h4{
+.load_more_source h4 {
   text-align: center;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 31px;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
   text-decoration: underline;
 }
 
-.load_more span{
-    color: #292D32;
+.load_more_source span {
+  color: #ffffff;
 }

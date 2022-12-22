@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet";
 import Hero from "../assets/Hero";
 import NewsMenu from "../components/NewsMenu";
 
+
 const Home = () => {
   return (
     <>
