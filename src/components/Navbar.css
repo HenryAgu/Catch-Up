@@ -83,14 +83,12 @@ header .nav-btn {
   font-size: 1.5rem;
 }
 
+
+/* Medium Screens */
 @media (max-width: 991px) {
   header {
-    height: 5vh;
+    height: 3vh;
   }
-}
-
-/* Small Screens */
-@media (max-width: 480px) {
   header .nav-btn,
   .reg-incase {
     display: flex;

@@ -78,3 +78,16 @@
       color: #292D32;
   }
   
+
+  /* Responsive starts here */
+
+/* medium screens */
+@media (max-width: 991px) {
+  .all_cat {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}

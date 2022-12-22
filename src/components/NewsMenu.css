@@ -19,10 +19,19 @@
   color: #717172;
 }
 
-.link:focus{
-    font-weight: 700;
-    text-decoration-line: underline;
-    color: #000000; 
+.link:focus {
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: #000000;
 }
 
-
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .class_menu {
+    flex-wrap: wrap;
+  }
+  .link {
+    font-size: 18px;
+    line-height: 10px;
+  }
+}

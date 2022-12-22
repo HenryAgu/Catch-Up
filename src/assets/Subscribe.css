@@ -83,3 +83,38 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
+/* Responsive starts here */
+
+/* medium screens */
+@media (max-width: 991px) {
+  .inner-subscribe {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .subscribe-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+  .email-box {
+    width: 98%;
+  }
+  .email_info {
+    width: auto;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .subscribe_header h1 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .subscribe_header p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

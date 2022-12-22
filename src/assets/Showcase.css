@@ -89,3 +89,57 @@
   border-radius: 4px;
   padding: 10px 30px 10px 30px;
 }
+
+/* Responsive starts here */
+
+/* medium screens */
+@media (max-width: 991px) {
+  /* First showcase */
+  .show_case {
+    flex-direction: column;
+  }
+  .show_case_text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  /* second show case */
+  .second_showcase {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .second_showcase p {
+    font-size: 25px;
+  }
+  .second_showcase h1 {
+    font-size: 65px;
+    line-height: 80px;
+    margin-top: -10px;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+  .show_case {
+    padding: 100px 30px 100px 30px;
+  }
+  .show_case_image img {
+    width: 100%;
+  }
+  .show_case_text {
+    width: 100%;
+  }
+  .show_case_text h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  /* second show case */
+  .second_showcase p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .second_showcase h1 {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 50px;
+  }
+}
