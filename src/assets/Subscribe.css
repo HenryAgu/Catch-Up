@@ -1,0 +1,14 @@
+.subscribe {
+  margin: 100px auto;
+  width: 90%;
+  border-top: 2px solid #5c5c5c;
+}
+
+.subscribe_header h1 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 130px;
+  color: #000000;
+}

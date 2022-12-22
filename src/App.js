@@ -18,6 +18,7 @@ import Finance from "./Pages/NewsMenuPages/Finance";
 import TopHeadlines from "./Pages/NewsMenuPages/TopHeadlines";
 import Showcase from "./assets/Showcase";
 import Subscribe from "./assets/Subscribe";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <OurSources/>
         <Showcase/>
         <Subscribe/>
+        <Footer/>
       </BrowserRouter>
     </>
   );
