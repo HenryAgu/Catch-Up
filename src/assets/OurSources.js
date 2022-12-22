@@ -11,7 +11,7 @@ const OurSources = () => {
     const [news, setNews] = useState([]);
     const [visible, setVisible] = useState(9);
     const baseURL =
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=7ab29adedaf94930ad04712c77f95055";
+      "https://newsapi.org/v2/top-headlines?country=ng&apiKey=7ab29adedaf94930ad04712c77f95055";
     useEffect(() => {
       axios.get(baseURL).then((response) => {
         console.log(response.data.articles);
@@ -26,7 +26,7 @@ const OurSources = () => {
   return (
     <div className="our_sources">
       <div className="our_sources_header">
-        <h1>US Top Headlines</h1>
+        <h1>Nigeria Top Headlines</h1>
       </div>
       <div className="source_cat">
         {news.splice(0, visible).map((newsItem) => (
@@ -47,7 +47,7 @@ const OurSources = () => {
         ))}
       </div>
       <div className="load_more_source" onClick={loadMore}>
-        <h4>Load More US Headlines <span>+</span></h4>
+        <h4>More Top Nigeria Headlines <span>+</span></h4>
       </div>
     </div>
   );

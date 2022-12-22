@@ -16,6 +16,8 @@ import AllCategories from "../src/Pages/NewsMenuPages/AllCategories";
 import Tech from "./Pages/NewsMenuPages/Tech";
 import Finance from "./Pages/NewsMenuPages/Finance";
 import TopHeadlines from "./Pages/NewsMenuPages/TopHeadlines";
+import Showcase from "./assets/Showcase";
+import Subscribe from "./assets/Subscribe";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route exact path="/top-headlines" element={<TopHeadlines />} />
         </Routes>
         <OurSources/>
+        <Showcase/>
+        <Subscribe/>
       </BrowserRouter>
     </>
   );
