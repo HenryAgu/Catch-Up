@@ -1,3 +1,5 @@
+/* DM Sans google font link */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200&family=DM+Sans:wght@400;500;700&display=swap");
 .subscribe {
   margin: 100px auto;
   width: 90%;
@@ -10,5 +12,74 @@
   font-weight: 700;
   font-size: 70px;
   line-height: 130px;
+  letter-spacing: 1.5px;
+  color: #000000;
+  margin-bottom: -10px;
+}
+
+.inner-subscribe {
+  display: flex;
+  gap: 30px;
+  /* align-items: center; */
+}
+
+.subscribe-email,
+.subscribe-text {
+  width: 100%;
+}
+
+.subscribe-email input {
+  width: 100%;
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+}
+
+.email-box {
+  display: flex;
+  width: 55%;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  border: 1px solid rgba(36, 24, 24, 0.2);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.submit_email {
+  cursor: pointer;
+}
+
+.email_info {
+  width: 55%;
+}
+
+.email_info p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #898989;
+}
+
+.email_info span {
+  color: #424245;
+}
+
+.subscribe-text p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
   color: #000000;
 }
