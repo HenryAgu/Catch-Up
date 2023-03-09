@@ -1,43 +1,29 @@
 // stylesheet
 import "./App.css";
 
-// components
-import Navbar from "./components/Navbar";
-
-// react router dom
+// Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// Home Component
-import Home from "./Pages/Home";
-import OurSources from "../src/assets/OurSources";
-
-// News Menu Pages
-import AllCategories from "../src/Pages/NewsMenuPages/AllCategories";
-import Tech from "./Pages/NewsMenuPages/Tech";
-import Finance from "./Pages/NewsMenuPages/Finance";
-import TopHeadlines from "./Pages/NewsMenuPages/TopHeadlines";
-import Showcase from "./assets/Showcase";
-import Subscribe from "./assets/Subscribe";
-import Footer from "./components/Footer";
+import Navbar from "./components/Layout/Navbar";
+import Dashboard from "./components/dashboard/Dashboard";
+import ProjectDetails from './components/projects/ProjectDetails';
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
+import CreateProject from "./components/projects/CreateProject";
 
 function App() {
   return (
-    <>
+    <div className="app">
       <BrowserRouter>
-        <Navbar />
-        <Home />
+        <Navbar/>
         <Routes>
-          <Route exact path="/all-categories" element={<AllCategories />} />
-          <Route exact path="/tech" element={<Tech />} />
-          <Route exact path="/finance" element={<Finance />} />
-          <Route exact path="/top-headlines" element={<TopHeadlines />} />
+          <Route exact path="/" element={<Dashboard/>}/>
+          <Route path="/project/:id" element={<ProjectDetails/>}/>
+          <Route path="/signin" element={<SignIn/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/create" element={<CreateProject/>}/>
         </Routes>
-        <OurSources/>
-        <Showcase/>
-        <Subscribe/>
-        <Footer/>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
