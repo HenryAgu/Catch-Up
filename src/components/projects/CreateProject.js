@@ -30,6 +30,8 @@ const CreateProject = (props) => {
       response.items.forEach((item) => {
         getDownloadURL(item).then((url) => {
           setImageList((prev) => [...prev, url]);
+          setContent()
+          setTitle()
         });
       });
     });
@@ -54,17 +56,10 @@ const CreateProject = (props) => {
   const submitHandler = async (e) => {
     e.preventDefault();
     uploadImage();
-    console.log(`Title: ${title} \nContent : ${content}`);
-    await addDoc(BlogRef, { title: title, content: content });
+    console.log(`Title: ${title} \nContent : ${content} ${imageList}`);
+    await addDoc(BlogRef, { title: title, content: content, imageList: imageList });
   };
 
-  // {imageList.map((url) => (
-  //   <>
-  //     <img src={url} alt="" />
-  //   </>
-  // ))}
-
-  const imageReview = imageList.map((url) => <img src={url} alt="" />);
   return (
     <>
       <div className="sign_in">
@@ -73,6 +68,7 @@ const CreateProject = (props) => {
           <div className="input_field">
             <label htmlFor="title">Title</label>
             <input
+            name="title"
               type="text"
               id="title"
               value={title}
@@ -82,7 +78,7 @@ const CreateProject = (props) => {
           <div className="input_field">
             <label htmlFor="content">Content</label>
             <textarea
-              name=""
+              name="content"
               id="content"
               value={content}
               cols="30"
@@ -92,7 +88,9 @@ const CreateProject = (props) => {
           </div>
           <div className="input_field">
             <input
+              name="imageUpload"
               type="file"
+              // value={imageUpload}
               onChange={(e) => {
                 setImageUpload(e.target.files[0]);
               }}
@@ -108,6 +106,7 @@ const CreateProject = (props) => {
               <>
                 <h3>Title : {user.title}</h3>
                 <p>Content : {user.content}</p>
+                <img src={user.imageList} alt="" />
                 <b>
                   Author: {user.authorFirstName} {user.authorLastName}
                 </b>
